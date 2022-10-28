@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     }
 
     
+        
     @IBAction func writeUpGoScreen02(_ sender: UIButton) {
         let vc = UIStoryboard(name: "Screen02ViewController" , bundle: nil).instantiateViewController(withIdentifier: "Screen02ViewController") as? Screen02ViewController
         

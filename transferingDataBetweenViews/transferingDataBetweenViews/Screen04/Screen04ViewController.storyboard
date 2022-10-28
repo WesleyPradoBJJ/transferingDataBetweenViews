@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,24 +17,26 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WL3-Fc-ozr">
                                 <rect key="frame" x="120" y="719.66666666666663" width="150" height="40.333333333333371"/>
-                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="The End! ❤️">
+                                    <backgroundConfiguration key="background" cornerRadius="16">
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                    </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="22"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="backToMainScreen:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="KAx-Gg-kBS"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m80-bC-hQH">
-                                <rect key="frame" x="20" y="197" width="350" height="20.333333333333343"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m80-bC-hQH">
+                                <rect key="frame" x="20" y="197" width="350" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Screen04" translatesAutoresizingMaskIntoConstraints="NO" id="wI4-oH-hNb">
-                                <rect key="frame" x="75" y="317.33333333333337" width="240" height="312.33333333333337"/>
+                                <rect key="frame" x="75" y="327" width="240" height="302.66666666666674"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -49,6 +50,7 @@
                             <constraint firstItem="m80-bC-hQH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="150" id="XXY-WI-6TC"/>
                             <constraint firstItem="wI4-oH-hNb" firstAttribute="top" secondItem="m80-bC-hQH" secondAttribute="bottom" constant="100" id="Xw2-TT-oN0"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wI4-oH-hNb" secondAttribute="trailing" constant="75" id="Yla-nn-oSm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="WL3-Fc-ozr" secondAttribute="bottom" constant="50" id="dIU-eQ-dFL"/>
                             <constraint firstItem="WL3-Fc-ozr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="120" id="nBL-Sf-KXm"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="m80-bC-hQH" secondAttribute="trailing" constant="20" id="wUh-f5-bAb"/>
                         </constraints>

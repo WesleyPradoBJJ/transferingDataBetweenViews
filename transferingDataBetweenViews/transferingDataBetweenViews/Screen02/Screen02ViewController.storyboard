@@ -17,16 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46G-gV-pRj">
-                                <rect key="frame" x="20" y="197" width="350" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <rect key="frame" x="20" y="197" width="350" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Screen02" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yl0-1e-I1K">
-                                <rect key="frame" x="75" y="321" width="240" height="309"/>
+                                <rect key="frame" x="75" y="327" width="240" height="303"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bnx-VS-DuV">
-                                <rect key="frame" x="120" y="720" width="150" height="40.333333333333371"/>
+                                <rect key="frame" x="120" y="720" width="150" height="40"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next...">
@@ -44,8 +44,8 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Bnx-VS-DuV" secondAttribute="trailing" constant="120" id="7gT-wZ-l55"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="yl0-1e-I1K" secondAttribute="bottom" constant="180" id="C4s-No-NzU"/>
                             <constraint firstItem="Bnx-VS-DuV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="120" id="GWc-3J-Tme"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Bnx-VS-DuV" secondAttribute="bottom" constant="50" id="MJO-rA-s9q"/>
                             <constraint firstItem="46G-gV-pRj" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="150" id="NWD-Se-Ia1"/>
                             <constraint firstItem="46G-gV-pRj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="R89-Eb-4hq"/>
                             <constraint firstItem="Bnx-VS-DuV" firstAttribute="top" secondItem="yl0-1e-I1K" secondAttribute="bottom" constant="90" id="cKh-Lm-ZxA"/>
